@@ -8,7 +8,7 @@
 //window.close();
 
 function closeWindow(){
-	if (confirm('Перейти в приложение 11')) {
+	if (confirm('Перейти в приложение 12')) {
 		//alert('переход ');
 		//myapp.views.main.router.navigate('/input_name/');
 		window.top.close();
