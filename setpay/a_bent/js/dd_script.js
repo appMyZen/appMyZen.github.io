@@ -12,7 +12,7 @@ function closeWindow(){
 		//alert('переход ');
 		//myapp.views.main.router.navigate('/input_name/');
 		alert('проб выйти ');
-		navigator.app.exitApp();
+		 self.close();
 	}
 }
 
