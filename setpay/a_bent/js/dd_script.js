@@ -41,11 +41,11 @@ function g(url){
   return true;
 }
 
-function dd_cl{
+function dd_cl(){
 	close();
 }
 
-function dd_cl_2{
+function dd_cl_2(){
 	window.open('http://nativnet.com','_self');
 	window.close();
 }
