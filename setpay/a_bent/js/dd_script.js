@@ -2,14 +2,14 @@
  * Created by Dmitry-xeon-v3 on 031 31.03.22.
  */
 
-alert('платеж прошел, спасибо. закрыть');
+alert('платеж да');
 //history.go(-8);
 
 //window.close();
 
 function closeWindow(){
-	if (confirm('Вы действительно хотите закрыть страницу?')) {
-		window.close();
+	if (confirm('Перейти в приложение')) {
+		window.location.href = 'index.html';;
 	}
 }
 
