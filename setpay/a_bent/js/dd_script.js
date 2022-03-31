@@ -8,7 +8,7 @@
 //window.close();
 
 function closeWindow(){
-	if (confirm('Перейти в приложение 10')) {
+	if (confirm('Перейти в приложение 11')) {
 		//alert('переход ');
 		//myapp.views.main.router.navigate('/input_name/');
 		alert('проб выйти ');
@@ -47,7 +47,8 @@ function dd_cl(){
 
 function dd_cl_2(){
 	window.open('http://nativnet.com','_self');
-	window.close();
+	window.close('http://nativnet.com','_self');
+	alert('taettt ');
 }
 
 
