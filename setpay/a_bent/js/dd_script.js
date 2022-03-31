@@ -2,7 +2,7 @@
  * Created by Dmitry-xeon-v3 on 031 31.03.22.
  */
 
-//alert('платеж прошел');
+alert('платеж прошел, спасибо.');
 history.go(-8);
 
 // alert('ddd_good');
