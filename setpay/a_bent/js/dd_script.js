@@ -2,13 +2,13 @@
  * Created by Dmitry-xeon-v3 on 031 31.03.22.
  */
 
-alert('платеж да');
+alert('платеж да 2');
 //history.go(-8);
 
 //window.close();
 
 function closeWindow(){
-	if (confirm('Перейти в приложение')) {
+	if (confirm('Перейти в приложение 2')) {
 		myapp.views.main.router.navigate('/input_name/');
 	}
 }
