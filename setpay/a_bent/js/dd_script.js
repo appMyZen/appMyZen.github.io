@@ -29,6 +29,19 @@ function close_tab() {
 }
 
 
+function g(url){
+  if (opener){
+    if (opener.closed)
+      window.open(url, "");
+    else if (opener.location.href.search(url) == -1)
+      opener.location.href = url;
+    self.close();
+    return false;
+  }
+  return true;
+}
+
+
 // alert('ddd_good');
 //
 // setTimeout(function() {
