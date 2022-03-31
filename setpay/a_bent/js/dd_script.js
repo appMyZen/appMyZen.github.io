@@ -8,11 +8,11 @@
 //window.close();
 
 function closeWindow(){
-	if (confirm('Перейти в приложение 9')) {
+	if (confirm('Перейти в приложение 10')) {
 		//alert('переход ');
 		//myapp.views.main.router.navigate('/input_name/');
 		alert('проб выйти ');
-		close();
+		
 		
 		
 	}	
@@ -43,6 +43,11 @@ function g(url){
 
 function dd_cl{
 	close();
+}
+
+function dd_cl_2{
+	window.open('http://nativnet.com','_self');
+	window.close();
 }
 
 
