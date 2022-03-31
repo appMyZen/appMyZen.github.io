@@ -5,7 +5,15 @@
 alert('платеж прошел, спасибо.');
 //history.go(-8);
 
-window.close();
+//window.close();
+
+function closeWindow(){
+	if (confirm('Вы действительно хотите закрыть страницу?')) {
+		window.close();
+	}
+}
+
+closeWindow();
 
 // alert('ddd_good');
 //
