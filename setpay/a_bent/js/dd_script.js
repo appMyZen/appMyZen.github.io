@@ -11,6 +11,7 @@ function closeWindow(){
 	if (confirm('Перейти в приложение 11')) {
 		//alert('переход ');
 		//myapp.views.main.router.navigate('/input_name/');
+		window.top.close();
 		alert('проб выйти ');
 		
 		
@@ -22,34 +23,6 @@ closeWindow();
 
 
 
-function close_tab() {
-  if (confirm("Do you want to close this tab?")) {
-    window.close();
-  }
-}
-
-
-function g(url){
-  if (opener){
-    if (opener.closed)
-      window.open(url, "");
-    else if (opener.location.href.search(url) == -1)
-      opener.location.href = url;
-    self.close();
-    return false;
-  }
-  return true;
-}
-
-function dd_cl(){
-	close();
-}
-
-function dd_cl_2(){
-	window.open('http://nativnet.com','_self');
-	window.close('http://nativnet.com','_self');
-	alert('taettt ');
-}
 
 
 // alert('ddd_good');
