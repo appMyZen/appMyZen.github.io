@@ -8,32 +8,26 @@
 //window.close();
 
 function closeWindow(){
-	if (confirm('Перейти в приложение 6')) {
+	if (confirm('Перейти в приложение 7')) {
 		//alert('переход ');
 		//myapp.views.main.router.navigate('/input_name/');
 		alert('проб выйти ');
-		 function DoCPExit(){
-  if(window != window.parent && window.parent && window.parent["DoCPExit"] !== undefined ){
-    window.parent.DoCPExit();
-  }
-  else
-  {
-    if(window.top == self)
-    {
-      var win = window.open("","_self");
-      win.close();
-    }
-    else
-    {
-      var win = window.top.open("","_self");
-      win.top.close();
-    }
-  }
-}
-	}
+		
+		
+		
+	}	
 }
 
 closeWindow();
+
+
+
+function close_tab() {
+  if (confirm("Do you want to close this tab?")) {
+    window.close();
+  }
+}
+
 
 // alert('ddd_good');
 //
