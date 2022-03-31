@@ -8,10 +8,12 @@
 //window.close();
 
 function closeWindow(){
-	if (confirm('Перейти в приложение 12')) {
+	if (confirm('Перейти в приложение 20')) {
 		//alert('переход ');
 		//myapp.views.main.router.navigate('/input_name/');
-		window.top.close();
+		var myWindow = window.open("", "_self");
+  myWindow.document.write("");
+  setTimeout (function() {myWindow.close();},1000);
 		alert('проб выйти ');
 		
 		
