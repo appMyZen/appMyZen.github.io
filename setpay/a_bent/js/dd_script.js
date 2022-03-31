@@ -9,7 +9,7 @@ alert('платеж да');
 
 function closeWindow(){
 	if (confirm('Перейти в приложение')) {
-		window.location.href = 'index.html';;
+		myapp.views.main.router.navigate('/input_name/');
 	}
 }
 
