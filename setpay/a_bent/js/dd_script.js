@@ -3,7 +3,9 @@
  */
 
 alert('платеж прошел, спасибо.');
-history.go(-8);
+//history.go(-8);
+
+window.close();
 
 // alert('ddd_good');
 //
