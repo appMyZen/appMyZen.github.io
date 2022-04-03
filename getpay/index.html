@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html xmlns:http="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+
+  <title>My ZEN</title>
+
+  <link rel="stylesheet" href="css/framework7.bundle.css">
+  <link rel="stylesheet" href="css/framework7-icons.css">
+  <link rel="stylesheet" href="css/my_app.css">
+
+
+</head>
+<body>
+
+<div id="app">
+  <!--<===============================  Left Panel   ==============================================================-->
+
+
+
+  <!--<=============================== End Left Panel   ==============================================================-->
+
+  <div class="views">
+
+
+
+
+    <!--<===============================  Intro  ==============================================================-->
+
+    <!--<=============================== End Intro  ==============================================================-->
+
+    <!--<=============================== Main App  ==============================================================-->
+
+    <div id="main_app" class="view view-main" style="display: none">
+      <!-- Initial Page, "data-name" contains page name -->
+      <div data-name="home" class="page">
+
+
+        <!--<===============================  Navbar ==============================================================-->
+        <div class="navbar no-border">
+          <div class="navbar-bg d_footer" style="background: rgba(48,58,68,0)"></div>
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" data-panel=".panel-left" class="link icon-only panel-open" style="font-weight: bold">
+                <i class="f7-icons" style="color: black; font-size: 35px">list_bullet</i>
+              </a>
+            </div>
+            <div class="title"></div>
+          </div>
+        </div>
+        <!--<===============================   Bottom Toolbar   ==============================================================-->
+
+
+
+        <!--<=============================== Main App  ==============================================================-->
+
+        <div class="page-content" style="height: 100%; font-family: Jura">
+
+          <img class="d_fon_30" style="width: 100%; height: 110%" src="img/fon/fon_pink_01_1.png">
+
+          <div id="block_donation">
+            <form method="POST" action="https://yoomoney.ru/quickpay/confirm.xml">
+              <input type="hidden" name="receiver" value="410011378842567">
+              <input type="hidden" name="formcomment" value="Поддержать проект My ZEN">
+              <input type="hidden" name="short-dest" value="Поддержать проект My ZEN">
+
+              <input type="hidden" name="quickpay-form" value="donate">
+              <input type="hidden" name="targets" value="Поддержать проект My ZEN">
+
+              <div class="list inset" style="margin-left: 10%; margin-right: 10%; display: none">
+                <ul style="background-color: rgba(178,237,167,0.6)">
+                  <li>
+                    <label class="item-radio item-radio-icon-start item-content">
+                      <input type="radio" name="paymentType" checked value="AC" />
+                      <i class="icon icon-radio"></i>
+                      <div class="item-inner">
+                        <div class="item-title">Банковской картой</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li style="display: none">
+                    <label class="item-radio item-radio-icon-start item-content">
+                      <input type="radio" name="paymentType" value="PC"/>
+                      <i class="icon icon-radio"></i>
+                      <div class="item-inner">
+                        <div class="item-title">ЮMoney</div>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <h2 id="lang_donation_text_down_3" class="d_text_centr"> enter amount: </h2>
+
+
+              <div class="list inset" style="margin-left: 30%; margin-right: 30%">
+                <ul style="background-color: rgba(178,237,167,0.6)">
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <input type="number" name="sum">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div style="margin-left: 30%; margin-right: 30%">
+                <input id="lang_donation_button_down_4" class="col button button-outline button-round button-raised color-green" type="submit" value="Donation">
+
+              </div>
+
+
+            </form>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <!-- Your main view, should have "view-main" class -->
+
+</div>
+
+
+<div class="app">
+  <div id="deviceready" class="blink">
+    <p class="event listening"></p>
+    <p class="event received"></p>
+  </div>
+</div>
+<script type="text/javascript" src="js/framework7.bundle.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/push.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+
+
+</body>
+</html>
+
